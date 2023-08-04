@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(24, 23, 23);
+    
+}
+nav{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 30px;
+}
+.logopt{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logopt a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.logopt span{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logopt span img{
+    width: 15%;
+    height: 75%;
+}
+.logopt span p{
+    font-size: 25px;
+}
+.nav-end{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-end a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+.pasta{
+    width: 85%;
+    /* border: 1px solid white; */
+    height: 48%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.txtpt{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.txtpt h3{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.txtpt h2{
+    font-size: 50px;
+    font-weight:600;
+}
+.txtpt p{
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.txtpt span{
+    width: 60%;
+    display: flex;
+    stroke-linecap: center;
+    justify-content: space-between;
+}
+.txtpt span button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: orangered;
+    border: none;
+    color: white;
+}
+.txtpt span p{
+    font-size: 30px;
+}
+.imgpt{
+    width: 55%;
+    height: 96%;
+    /* display: flex;
+    align-items: start;
+    justify-content: start; */
+    /* border: 1px solid white; */
+    position: relative;
+}
+.imgpt img{
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    /* border: 1px solid white; */
+    
+}
+.pallete{
+    width: 80%;
+    height: 35%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(235, 188, 59);
+    border-radius: 30px;
+    border: none;
+    
+}
+.pallete button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color:  rgb(24, 23, 23);
+    color: white;
+    border: none;
+}
+.card{
+    width: 13%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    /* margin-right: 10px; */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    border: none;
+}
+.card img{
+    width: 90%;
+    height: 45%;
+}
+.card a{
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    width: 60%;
+    font-weight: 600;
+}
+
+
+
+
+/* Responsive */
+@media(max-width:768px){
+    .container{
+        height:auto;
+
+
+    }
+    .logopt{
+        width: 80%;
+    }
+    .logopt span img{
+        width: 30%;
+    }
+    .logopt span p{
+        font-size: 16px;
+    }
+    .logopt a{
+        font-size: 14px;
+    }
+    .nav-end{
+        width: 15%;
+    }
+    .nav-end a{
+        font-size: 14px;
+    }
+    .pasta{
+        height: 600px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .txtpt{
+        width: 100%;
+        height: 40%;
+    }
+    .txtpt span button{
+        width: 80px;
+    }
+    .imgpt{
+        width: 100%;
+        height: 45%;
+    }
+    .pallete{
+        width: 94%;
+        height: 300px;
+        justify-content: space-between;
+    }
+    #cd1{
+        display: none;
+    }
+    .card{
+        width: 35%;
+    }
+
+}
